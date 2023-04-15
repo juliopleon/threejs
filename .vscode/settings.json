@@ -1,5 +1,10 @@
 {
     "cSpell.words": [
-        "Customizer"
+        "Customizer",
+        "tailwindcss"
+    ],
+    "css.lint.unknownAtRules": "ignore",
+    "css.customData": [
+        "./.vscode/css-data.json"
     ]
 }
