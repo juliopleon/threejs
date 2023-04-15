@@ -16,6 +16,35 @@ html {
   }
 }
 
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+input[type="file"] {
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+.sketch-picker {
+  width: 170px !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 6px !important;
+}
+
+.sketch-picker>div:nth-child(3) {
+  display: none !important;
+}
+
 .app {
   @layer relative w-full h-screen overflow-hidden;
 }
@@ -62,32 +91,4 @@ html {
 
 .tab-btn {
   @layer w-14 h-14 flex justify-center items-center cursor-pointer select-none;
-}
-
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-input[type="file"] {
-  z-index: -1;
-  position: absolute;
-  opacity: 0;
-}
-
-.sketch-picker {
-  width: 170px !important;
-  background: rgba(255, 255, 255, 0.25) !important;
-  box-shadow: 0 2px 30px 0 rgba(31, 38, 135, 0.07) !important;
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.18) !important;
-  border-radius: 6px !important;
-}
-
-.sketch-picker>div:nth-child(3) {
-  display: none !important;
 }

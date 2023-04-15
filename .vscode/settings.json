@@ -3,7 +3,7 @@
         "Customizer",
         "tailwindcss"
     ],
-    "css.lint.unknownAtRules": "ignore",
+    // "css.lint.unknownAtRules": "ignore",
     "css.customData": [
         "./.vscode/css-data.json"
     ]
