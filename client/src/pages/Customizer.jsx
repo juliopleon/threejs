@@ -67,7 +67,7 @@ const Customizer = () => {
 
             const data = await response.json();
 
-            handleDecals(type, `data:image/png;base64, ${data.photo}`)
+            handleDecals(type, `data:image/png;base64,${data.photo}`)
         } catch (error) {
             alert(error)
         } finally {
@@ -93,9 +93,11 @@ const Customizer = () => {
                 break;
             case "stylishShirt":
                 state.isFullTexture = !activeFilterTab[tabName]
+                break;
             default:
                 state.isLogoTexture = true;
                 state.isFullTexture = false;
+                break;
         }
 
         // after setting the state, set activeFilterTab is updated
